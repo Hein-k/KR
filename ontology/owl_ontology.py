@@ -122,4 +122,4 @@ with onto:
     
 cwd = os.getcwd()
     
-onto.save(cwd + "/OntologyFile", format = "rdfxml")
+onto.save(cwd + "/OntologyFile.rdf", format = "rdfxml")
