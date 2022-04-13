@@ -1,0 +1,1672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:onto="http://test.org/myonto.owl"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:dbo="http://dbpedia.org/ontology/"
+	xmlns:dbr="http://dbpedia.org/resource/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dbp="http://dbpedia.org/property/"
+	xmlns:rdf4j="http://rdf4j.org/schema/rdf4j#"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#">
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
+	<owl:equivalentClass rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/property/occupation">
+	<owl:equivalentClass rdf:resource="http://test.org/myonto.owlOccupation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Taylor_Swift">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/West_Reading,_Pennsylvania">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Joe_Alwyn">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPartner"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Taylor_Swift">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/West_Reading,_Pennsylvania"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1989-12-13</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Singer-songwriter</myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Joe_Alwyn"/>
+	<myonto.owlhasRelative xmlns="http://test.org/" xml:lang="en"></myonto.owlhasRelative>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">371774</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">746</myonto.owlamountWikiLinks>
+	<myonto.owlhasRelative xmlns="http://test.org/" xml:lang="en">Austin Swift</myonto.owlhasRelative>
+	<myonto.owlhasRelative xmlns="http://test.org/" xml:lang="en">Marjorie Finlay</myonto.owlhasRelative>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">actress</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">director</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">businesswoman</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">record producer</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Alia_Bhatt">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Mumbai">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Alia_Bhatt">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Mumbai"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-03-15</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actress, singer</myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en">Ranbir Kapoor</myonto.owlhasPartner>
+	<myonto.owlhasRelative xmlns="http://test.org/" xml:lang="en">See Bhatt family</myonto.owlhasRelative>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">86819</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">177</myonto.owlamountWikiLinks>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Kylie_Jenner">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Los_Angeles">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Kardashian_family">
+	<rdf:type rdf:resource="http://test.org/myonto.owlRelative"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Kylie_Jenner">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Los_Angeles"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1997-08-10</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Media personality</myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en">Tyga</myonto.owlhasPartner>
+	<myonto.owlhasRelative xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Kardashian_family"/>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">94161</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">187</myonto.owlamountWikiLinks>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en">Travis Scott</myonto.owlhasPartner>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">businesswoman</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">model</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">socialite</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Robert_Pattinson">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/London">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Suki_Waterhouse">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPartner"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Lizzy_Pattinson">
+	<rdf:type rdf:resource="http://test.org/myonto.owlRelative"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Robert_Pattinson">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/London"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1986-05-13</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actor</myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Suki_Waterhouse"/>
+	<myonto.owlhasRelative xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Lizzy_Pattinson"/>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">154863</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">283</myonto.owlamountWikiLinks>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Bruno_Mars">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Hawaii">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Jessica_Caban">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPartner"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Bruno_Mars">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Hawaii"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1985-10-08</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Singer</myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Jessica_Caban"/>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">169542</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">409</myonto.owlamountWikiLinks>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">musician</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Honolulu">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Bruno_Mars">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Honolulu"/>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">dancer</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">record producer</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">songwriter</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Madonna">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Bay_City,_Michigan">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Madonna">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Bay_City,_Michigan"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1958-08-16</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">actress</myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en">Carlos Leon</myonto.owlhasPartner>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">212634</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">704</myonto.owlamountWikiLinks>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">author</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">dancer</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Singer-songwriter</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">director</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">businesswoman</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">producer</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Bradley_Cooper">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Abington_Township,_Montgomery_County,_Pennsylvania">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Irina_Shayk">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPartner"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Bradley_Cooper">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Abington_Township,_Montgomery_County,_Pennsylvania"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1975-01-05</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Irina_Shayk"/>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">129787</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">329</myonto.owlamountWikiLinks>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actor</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">filmmaker</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Britney_Spears">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/McComb,_Mississippi">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Britney_Spears">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/McComb,_Mississippi"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1981-12-02</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">songwriter</myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en">Sam Asghari</myonto.owlhasPartner>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">252265</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">557</myonto.owlamountWikiLinks>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Singer</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">actress</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">dancer</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Keanu_Reeves">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Beirut">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Jennifer_Syme">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPartner"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Keanu_Reeves">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Beirut"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1964-09-02</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actor</myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Jennifer_Syme"/>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">147667</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">458</myonto.owlamountWikiLinks>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en">Alexandra Grant</myonto.owlhasPartner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Lebanon">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Keanu_Reeves">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Lebanon"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Ranbir_Kapoor">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Maharashtra">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Ranbir_Kapoor">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Maharashtra"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1982-09-28</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actor</myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en">Alia Bhatt</myonto.owlhasPartner>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">110132</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">207</myonto.owlamountWikiLinks>
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Mumbai"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Sonam_Kapoor">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/India">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Actor">
+	<rdf:type rdf:resource="http://test.org/myonto.owlOccupation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Sonam_Kapoor">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/India"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1985-06-09</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Actor"/>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2018</myonto.owlhasPartner>
+	<myonto.owlhasRelative xmlns="http://test.org/" xml:lang="en">See Surinder Kapoor family</myonto.owlhasRelative>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">133563</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">241</myonto.owlamountWikiLinks>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en">Anand Ahuja</myonto.owlhasPartner>
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Mumbai"/>
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Maharashtra"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Ariana_Grande">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Boca_Raton,_Florida">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Frankie_Grande">
+	<rdf:type rdf:resource="http://test.org/myonto.owlRelative"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Ariana_Grande">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Boca_Raton,_Florida"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-06-26</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-15</myonto.owlhasPartner>
+	<myonto.owlhasRelative xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Frankie_Grande"/>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">213213</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">497</myonto.owlamountWikiLinks>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en">Dalton Gomez</myonto.owlhasPartner>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">actress</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Singer</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">songwriter</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Ayushmann_Khurrana">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Chandigarh">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Aparshakti_Khurana">
+	<rdf:type rdf:resource="http://test.org/myonto.owlRelative"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Ayushmann_Khurrana">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Chandigarh"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1984-09-14</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actor</myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</myonto.owlhasPartner>
+	<myonto.owlhasRelative xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Aparshakti_Khurana"/>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">46103</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">149</myonto.owlamountWikiLinks>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en">Tahira Kashyap</myonto.owlhasPartner>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">singer</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">television host</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Beyoncé">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Houston">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Solange_Knowles">
+	<rdf:type rdf:resource="http://test.org/myonto.owlRelative"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Beyoncé">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Houston"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1981-09-04</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-04-04</myonto.owlhasPartner>
+	<myonto.owlhasRelative xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Solange_Knowles"/>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">352396</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">751</myonto.owlamountWikiLinks>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Jay-Z">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPartner"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Beyoncé">
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Jay-Z"/>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">director</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Texas">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Beyoncé">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Texas"/>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">dancer</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Singer</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">producer</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">actress</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">businesswoman</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">songwriter</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Angelina_Jolie">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/James_Haven">
+	<rdf:type rdf:resource="http://test.org/myonto.owlRelative"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Angelina_Jolie">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Los_Angeles"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1975-06-04</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">filmmaker</myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1996</myonto.owlhasPartner>
+	<myonto.owlhasRelative xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/James_Haven"/>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">223186</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">441</myonto.owlamountWikiLinks>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Chip_Taylor">
+	<rdf:type rdf:resource="http://test.org/myonto.owlRelative"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Angelina_Jolie">
+	<myonto.owlhasRelative xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Chip_Taylor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Barry_Voight">
+	<rdf:type rdf:resource="http://test.org/myonto.owlRelative"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Angelina_Jolie">
+	<myonto.owlhasRelative xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Barry_Voight"/>
+	<myonto.owlhasRelative xmlns="http://test.org/" xml:lang="en"></myonto.owlhasRelative>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2003</myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</myonto.owlhasPartner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Jonny_Lee_Miller">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPartner"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Angelina_Jolie">
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Jonny_Lee_Miller"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Billy_Bob_Thornton">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPartner"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Angelina_Jolie">
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Billy_Bob_Thornton"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Brad_Pitt">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPartner"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Angelina_Jolie">
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Brad_Pitt"/>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en">div.</myonto.owlhasPartner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/California">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Angelina_Jolie">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/California"/>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actress</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Hrithik_Roshan">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Mumbai"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1974-01-10</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actor</myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</myonto.owlhasPartner>
+	<myonto.owlhasRelative xmlns="http://test.org/" xml:lang="en">See Roshan family</myonto.owlhasRelative>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">134086</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">233</myonto.owlamountWikiLinks>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</myonto.owlhasPartner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Sussanne_Khan">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPartner"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Hrithik_Roshan">
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Sussanne_Khan"/>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en">divorced</myonto.owlhasPartner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Priyanka_Chopra">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Category:Jonas_family">
+	<rdf:type rdf:resource="http://test.org/myonto.owlRelative"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Priyanka_Chopra">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/India"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1982-07-18</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2018</myonto.owlhasPartner>
+	<myonto.owlhasRelative xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Category:Jonas_family"/>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">232324</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">540</myonto.owlamountWikiLinks>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Nick_Jonas">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPartner"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Priyanka_Chopra">
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Nick_Jonas"/>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Jamshedpur">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Priyanka_Chopra">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Jamshedpur"/>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">film producer</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Jharkhand">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Priyanka_Chopra">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Jharkhand"/>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actress</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">model</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Bihar">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Priyanka_Chopra">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Bihar"/>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">singer</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Scarlett_Johansson">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/New_York_City">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Ejner_Johansson">
+	<rdf:type rdf:resource="http://test.org/myonto.owlRelative"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Scarlett_Johansson">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/New_York_City"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1984-11-22</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</myonto.owlhasPartner>
+	<myonto.owlhasRelative xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Ejner_Johansson"/>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">189481</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">416</myonto.owlamountWikiLinks>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2011</myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2020</myonto.owlhasPartner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Colin_Jost">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPartner"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Scarlett_Johansson">
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Colin_Jost"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Ryan_Reynolds">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPartner"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Scarlett_Johansson">
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Ryan_Reynolds"/>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en">Romain Dauriac</myonto.owlhasPartner>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actress</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">singer</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Miley_Cyrus">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Franklin,_Tennessee">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Miley_Cyrus">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Franklin,_Tennessee"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1992-11-23</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-12-23</myonto.owlhasPartner>
+	<myonto.owlhasRelative xmlns="http://test.org/" xml:lang="en"></myonto.owlhasRelative>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">193708</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">487</myonto.owlamountWikiLinks>
+	<myonto.owlhasRelative xmlns="http://test.org/" xml:lang="en">Brandi Cyrus</myonto.owlhasRelative>
+	<myonto.owlhasRelative xmlns="http://test.org/" xml:lang="en">Noah Cyrus</myonto.owlhasRelative>
+	<myonto.owlhasRelative xmlns="http://test.org/" xml:lang="en">Ron Cyrus</myonto.owlhasRelative>
+	<myonto.owlhasRelative xmlns="http://test.org/" xml:lang="en">Trace Cyrus</myonto.owlhasRelative>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-01-28</myonto.owlhasPartner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Liam_Hemsworth">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPartner"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Miley_Cyrus">
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Liam_Hemsworth"/>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Singer</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">songwriter</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">actress</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">record producer</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Jennifer_Lawrence">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Indian_Hills,_Kentucky">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Jennifer_Lawrence">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Indian_Hills,_Kentucky"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1990-08-15</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actress</myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</myonto.owlhasPartner>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">134751</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">255</myonto.owlamountWikiLinks>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en">Cooke Maroney</myonto.owlhasPartner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Cate_Blanchett">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Victoria_(Australia)">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Cate_Blanchett">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Victoria_(Australia)"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-05-14</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">producer</myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1997</myonto.owlhasPartner>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">191824</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">481</myonto.owlamountWikiLinks>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Andrew_Upton">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPartner"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Cate_Blanchett">
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Andrew_Upton"/>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Melbourne">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Cate_Blanchett">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Melbourne"/>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actress</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Dwayne_Johnson">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Hayward,_California">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Dwayne_Johnson">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Hayward,_California"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1972-05-02</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1997</myonto.owlhasPartner>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">200481</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">533</myonto.owlamountWikiLinks>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</myonto.owlhasPartner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Dany_Garcia">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPartner"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Dwayne_Johnson">
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Dany_Garcia"/>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en">Lauren Hashian</myonto.owlhasPartner>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actor</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">professional wrestler</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">businessman</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">producer</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Keira_Knightley">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/London"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1985-03-26</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actress</myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-05-04</myonto.owlhasPartner>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">143578</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">366</myonto.owlamountWikiLinks>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/James_Righton">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPartner"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Keira_Knightley">
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/James_Righton"/>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Phil_McGraw">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Vinita,_Oklahoma">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Phil_McGraw">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Vinita,_Oklahoma"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1950-09-01</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1970</myonto.owlhasPartner>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">61840</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">116</myonto.owlamountWikiLinks>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1973</myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1976</myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en">Debbie Higgins McCall</myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en">Robin Jameson</myonto.owlhasPartner>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Television host</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">author</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Paul_Rudd">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Passaic,_New_Jersey">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Paul_Rudd">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Passaic,_New_Jersey"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-04-06</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">screenwriter</myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2003</myonto.owlhasPartner>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">50362</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">206</myonto.owlamountWikiLinks>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en">Julie Yaeger</myonto.owlhasPartner>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actor</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">comedian</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">producer</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Rana_Daggubati">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Tamil_Nadu">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Rana_Daggubati">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Tamil_Nadu"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1984-12-14</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2020</myonto.owlhasPartner>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">74015</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">194</myonto.owlamountWikiLinks>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en">Miheeka Bajaj</myonto.owlhasPartner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Chennai">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Rana_Daggubati">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Chennai"/>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">entrepreneur</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actor</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">film producer</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Reese_Witherspoon">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Louisiana">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Reese_Witherspoon">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Louisiana"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1976-03-22</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actress</myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-06-05</myonto.owlhasPartner>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">160374</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">365</myonto.owlamountWikiLinks>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007-10-05</myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-03-26</myonto.owlhasPartner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Ryan_Phillippe">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPartner"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Reese_Witherspoon">
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Ryan_Phillippe"/>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en">Jim Toth</myonto.owlhasPartner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/New_Orleans">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Reese_Witherspoon">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/New_Orleans"/>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">entrepreneur</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">producer</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Tina_Fey">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Pennsylvania">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Tina_Fey">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Pennsylvania"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1970-05-18</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">comedian</myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-06-03</myonto.owlhasPartner>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">117692</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">318</myonto.owlamountWikiLinks>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Jeff_Richmond">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPartner"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Tina_Fey">
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Jeff_Richmond"/>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Upper_Darby_Township,_Delaware_County,_Pennsylvania">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Tina_Fey">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Upper_Darby_Township,_Delaware_County,_Pennsylvania"/>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">writer</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actress</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">playwright</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">producer</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Jennifer_Aniston">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Los_Angeles"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-02-11</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</myonto.owlhasPartner>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">98359</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">278</myonto.owlamountWikiLinks>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2005</myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2015</myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Brad_Pitt"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Justin_Theroux">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPartner"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Jennifer_Aniston">
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Justin_Theroux"/>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/California"/>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">businesswoman</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">producer</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actress</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Madhuri_Dixit">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Mumbai"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1967-05-15</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">dancer</myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-10-17</myonto.owlhasPartner>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">129216</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">341</myonto.owlamountWikiLinks>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en">Shriram Madhav Nene</myonto.owlhasPartner>
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Maharashtra"/>
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/India"/>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">television personality</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actress</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">producer</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Natalie_Portman">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Jerusalem">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Natalie_Portman">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Jerusalem"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1981-06-09</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-08-04</myonto.owlhasPartner>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">146062</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">389</myonto.owlamountWikiLinks>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Benjamin_Millepied">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPartner"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Natalie_Portman">
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Benjamin_Millepied"/>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">producer</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actress</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">director</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Tom_Hanks">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Concord,_California">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Tom_Hanks">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Concord,_California"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1956-07-09</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actor</myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1978</myonto.owlhasPartner>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">101051</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">407</myonto.owlamountWikiLinks>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1987</myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1988</myonto.owlhasPartner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Rita_Wilson">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPartner"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Tom_Hanks">
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Rita_Wilson"/>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en">divorced</myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en">Samantha Lewes</myonto.owlhasPartner>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">filmmaker</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Harry_Knowles">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Austin,_Texas">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Harry_Knowles">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Austin,_Texas"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1971-12-11</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Film critic, writer</myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2007</myonto.owlhasPartner>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">19979</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</myonto.owlamountWikiLinks>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en">Patricia Cho Jones</myonto.owlhasPartner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Anushka_Sharma">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Uttar_Pradesh">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Anushka_Sharma">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Uttar_Pradesh"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-05-01</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Film producer</myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</myonto.owlhasPartner>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">106542</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">182</myonto.owlamountWikiLinks>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Virat_Kohli">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPartner"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Anushka_Sharma">
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Virat_Kohli"/>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Ayodhya">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Anushka_Sharma">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Ayodhya"/>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actor</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Justin_Bieber">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/London,_Ontario">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Justin_Bieber">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/London,_Ontario"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1994-03-01</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">songwriter</myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-09-13</myonto.owlhasPartner>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">220034</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">558</myonto.owlamountWikiLinks>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Hailey_Bieber">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPartner"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Justin_Bieber">
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Hailey_Bieber"/>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Singer</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Adriana_Lima">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Salvador,_Bahia">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Adriana_Lima">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Salvador,_Bahia"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1981-06-12</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">actress</myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2009</myonto.owlhasPartner>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">64353</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">211</myonto.owlamountWikiLinks>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</myonto.owlhasPartner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Marko_Jarić">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPartner"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Adriana_Lima">
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Marko_Jarić"/>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en">divorced</myonto.owlhasPartner>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Model</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Allu_Arjun">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Tamil_Nadu"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-04-08</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">dancer</myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2011</myonto.owlhasPartner>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">75165</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">207</myonto.owlamountWikiLinks>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en">Allu Sneha Reddy</myonto.owlhasPartner>
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Chennai"/>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Film
+actor</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Amy_Adams">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Vicenza">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Amy_Adams">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Vicenza"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1974-08-20</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actress</myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2015</myonto.owlhasPartner>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">138792</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">321</myonto.owlamountWikiLinks>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en">Darren Le Gallo</myonto.owlhasPartner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Deepika_Padukone">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Copenhagen">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Deepika_Padukone">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Copenhagen"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1986-01-05</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actress</myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2018</myonto.owlhasPartner>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">148090</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">276</myonto.owlamountWikiLinks>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Ranveer_Singh">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPartner"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Deepika_Padukone">
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Ranveer_Singh"/>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Emma_Stone">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Scottsdale,_Arizona">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Emma_Stone">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Scottsdale,_Arizona"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-11-06</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actress</myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2020</myonto.owlhasPartner>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">127939</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">296</myonto.owlamountWikiLinks>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Dave_McCary">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPartner"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Emma_Stone">
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Dave_McCary"/>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Jennifer_Love_Hewitt">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Waco,_Texas">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Jennifer_Love_Hewitt">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Waco,_Texas"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1979-02-21</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">producer</myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2013</myonto.owlhasPartner>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">72728</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">270</myonto.owlamountWikiLinks>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Brian_Hallisay">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPartner"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Jennifer_Love_Hewitt">
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Brian_Hallisay"/>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actress</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">singer</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Ram_Charan">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Tamil_Nadu"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1985-03-27</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actor</myonto.owlhasOccupation>
+	<myonto.owlhasPartner xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-14</myonto.owlhasPartner>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">79968</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">180</myonto.owlamountWikiLinks>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en"></myonto.owlhasPartner>
+	<myonto.owlhasPartner xmlns="http://test.org/" xml:lang="en">Upasana Kamineni</myonto.owlhasPartner>
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/India"/>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">film producer</myonto.owlhasOccupation>
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Chennai"/>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">entrepreneur</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Parineeti_Chopra">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Haryana">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Singing">
+	<rdf:type rdf:resource="http://test.org/myonto.owlOccupation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Parineeti_Chopra">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Haryana"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-10-22</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Singing"/>
+	<myonto.owlhasRelative xmlns="http://test.org/" xml:lang="en">See Chopra family</myonto.owlhasRelative>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">63154</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">176</myonto.owlamountWikiLinks>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/India"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Ambala">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Parineeti_Chopra">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Ambala"/>
+	<myonto.owlhasOccupation xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Actor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Pawan_Kalyan">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Bapatla">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Pawan_Kalyan">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Bapatla"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1968-09-02</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">director</myonto.owlhasOccupation>
+	<myonto.owlhasRelative xmlns="http://test.org/" xml:lang="en">See Allu–Konidela family</myonto.owlhasRelative>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">66346</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">163</myonto.owlamountWikiLinks>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actor</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Andhra_Pradesh">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Pawan_Kalyan">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Andhra_Pradesh"/>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Film Producer politician</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">writer</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Prabhas">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Krishnam_Raju">
+	<rdf:type rdf:resource="http://test.org/myonto.owlRelative"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Prabhas">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Chennai"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1979-10-23</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actor</myonto.owlhasOccupation>
+	<myonto.owlhasRelative xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Krishnam_Raju"/>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">40606</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">112</myonto.owlamountWikiLinks>
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Tamil_Nadu"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Vicky_Kaushal">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Sunny_Kaushal">
+	<rdf:type rdf:resource="http://test.org/myonto.owlRelative"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Vicky_Kaushal">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Mumbai"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-05-16</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actor</myonto.owlhasOccupation>
+	<myonto.owlhasRelative xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Sunny_Kaushal"/>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">64008</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">143</myonto.owlamountWikiLinks>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Shraddha_Kapoor">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Mumbai"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-03-03</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+	<myonto.owlhasRelative xmlns="http://test.org/" xml:lang="en">See Mangeshkar-Hardikar-Abhisheki family</myonto.owlhasRelative>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">101917</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">195</myonto.owlamountWikiLinks>
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Maharashtra"/>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">singer</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actress</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Billie_Eilish">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Finneas_O'Connell">
+	<rdf:type rdf:resource="http://test.org/myonto.owlRelative"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Billie_Eilish">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Los_Angeles"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-12-18</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">songwriter</myonto.owlhasOccupation>
+	<myonto.owlhasRelative xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Finneas_O'Connell"/>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">152295</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">282</myonto.owlamountWikiLinks>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Singer</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Lady_Gaga">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Natali_Germanotta">
+	<rdf:type rdf:resource="http://test.org/myonto.owlRelative"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Lady_Gaga">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/New_York_City"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1986-03-28</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">record producer</myonto.owlhasOccupation>
+	<myonto.owlhasRelative xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Natali_Germanotta"/>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">297239</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">609</myonto.owlamountWikiLinks>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Singer</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">actress</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">songwriter</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Brad_Pitt">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Shawnee,_Oklahoma">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Brad_Pitt">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Shawnee,_Oklahoma"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1963-12-18</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">155022</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">386</myonto.owlamountWikiLinks>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actor</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Zac_Efron">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/San_Luis_Obispo,_California">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Zac_Efron">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/San_Luis_Obispo,_California"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-10-18</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">singer</myonto.owlhasOccupation>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">91095</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">266</myonto.owlamountWikiLinks>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Kartik_Aaryan">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/India"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1990-11-22</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actor</myonto.owlhasOccupation>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">68365</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">115</myonto.owlamountWikiLinks>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Kriti_Sanon">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/New_Delhi">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Kriti_Sanon">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/New_Delhi"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1990-07-27</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actress</myonto.owlhasOccupation>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">52741</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">129</myonto.owlamountWikiLinks>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Vidya_Balan">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Mumbai"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1979-01-01</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actress</myonto.owlhasOccupation>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">122691</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">231</myonto.owlamountWikiLinks>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Akon">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/St._Louis">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Akon">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/St._Louis"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1973-04-16</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">65988</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">321</myonto.owlamountWikiLinks>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">record producer</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Sara_Ali_Khan">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Mumbai"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-08-12</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actress</myonto.owlhasOccupation>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">38929</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">84</myonto.owlamountWikiLinks>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Zac_Efron">
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Madhya_Pradesh">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Kartik_Aaryan">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Madhya_Pradesh"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Mohit_Chauhan">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Himachal_Pradesh">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Composer">
+	<rdf:type rdf:resource="http://test.org/myonto.owlOccupation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Mohit_Chauhan">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Himachal_Pradesh"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1966-03-11</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Composer"/>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">17795</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">94</myonto.owlamountWikiLinks>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Taapsee_Pannu">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/New_Delhi"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-08-01</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actress, Producer</myonto.owlhasOccupation>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">74916</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">190</myonto.owlamountWikiLinks>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Brad_Pitt">
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">film producer</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Tiger_Shroff">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Maharashtra"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1990-03-02</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Singing"/>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">34941</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">97</myonto.owlamountWikiLinks>
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Mumbai"/>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Akon">
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Singer</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Dance">
+	<rdf:type rdf:resource="http://test.org/myonto.owlOccupation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Tiger_Shroff">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/India"/>
+	<myonto.owlhasOccupation xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Dance"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Martial_arts">
+	<rdf:type rdf:resource="http://test.org/myonto.owlOccupation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Tiger_Shroff">
+	<myonto.owlhasOccupation xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Martial_arts"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Gwalior">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Kartik_Aaryan">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Gwalior"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Akon">
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">songwriter</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">philanthropist]]</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Tiger_Shroff">
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actor</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Rihanna">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Saint_Michael,_Barbados">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Rihanna">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Saint_Michael,_Barbados"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-02-20</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">222327</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">538</myonto.owlamountWikiLinks>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Akon">
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">entrepreneur</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">[[#Philanthropy</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Nahan">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Mohit_Chauhan">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Nahan"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Lyricist">
+	<rdf:type rdf:resource="http://test.org/myonto.owlOccupation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Mohit_Chauhan">
+	<myonto.owlhasOccupation xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Lyricist"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Philanthropy">
+	<rdf:type rdf:resource="http://test.org/myonto.owlOccupation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Mohit_Chauhan">
+	<myonto.owlhasOccupation xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Philanthropy"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Rihanna">
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Singer</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">songwriter</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">actress</myonto.owlhasOccupation>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">businesswoman</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Mohit_Chauhan">
+	<myonto.owlhasOccupation xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Singing"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Kangana_Ranaut">
+	<rdf:type rdf:resource="http://test.org/myonto.owlPerson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Mandi_district">
+	<rdf:type rdf:resource="http://test.org/myonto.owlbirthPlace"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Kangana_Ranaut">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/Mandi_district"/>
+	<myonto.owlbirthDate xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-03-23</myonto.owlbirthDate>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actress</myonto.owlhasOccupation>
+	<myonto.owllengthPage xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">135007</myonto.owllengthPage>
+	<myonto.owlamountWikiLinks xmlns="http://test.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">227</myonto.owlamountWikiLinks>
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">filmmaker</myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Kriti_Sanon">
+	<myonto.owlbirthPlace xmlns="http://test.org/" rdf:resource="http://dbpedia.org/resource/India"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Kangana_Ranaut">
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en"></myonto.owlhasOccupation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://dbpedia.org/resource/Zac_Efron">
+	<myonto.owlhasOccupation xmlns="http://test.org/" xml:lang="en">Actor</myonto.owlhasOccupation>
+</rdf:Description>
+
+</rdf:RDF>
