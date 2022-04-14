@@ -10,6 +10,6 @@ In this repository every step that we took in the creation part of the generated
 5. NLG module contains three notebooks: Part1, Part2, Part3. It is required to run them with the consequtive order. 
 6. Part1 downloads the WebNLG dataset, preprocesses and saves the preprocessed version. 
 7. Part2 fine-tunes T5 language model with WebNLG data. This builds our triple-verbalizer. It is important to make sure that the trained model is saved since the training time is long.
-8. Part3 generates so-called "gossip stories". The data which is used to generate stories is available in tsv format in the same folder. 
+8. Part3 generates so-called "gossip stories". The data used for generating stories is available in tsv format in the same folder. 
 9. Please remember that the generation model is not perfect. It makes several language mistakes. It is necessary to do proof-reading and editing afterwards. Therefore, the generated stories which are used in the questionaire can be found in "Generated Stories - Manually Edited Afterwards" folder. 
 10. Enjoy our experiment! :)
