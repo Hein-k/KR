@@ -7,4 +7,9 @@ In this repository every step that we took in the creation part of the generated
 2. After the RDF file is loaded as a graph in GraphDB, the SPARQL queries can be given as input to GraphDB to get instances for out ontology. With the usage of the dbpedia web source these instances where created. The SPARQL queries can be found in the sparql_visual folder in the file sparql_queries.py.
 3. In the link_prediction folder the Python notebook in which the link prediction were calculated for the ontology can be found. These predictions among celebrities were stores in the MatchesLink.tsv file and later distributed to generate the stories with the use of the T5 model.
 4. In the sparql_visual folder the SPARQL notebook can be found in which visualities with the help of the SPARQL queries where build.
-5. The T5 model .... 
+5. NLG module contains three notebooks: Part1, Part2, Part3. It is required to run them with the consequtive order. 
+6. Part1 downloads the WebNLG dataset, preprocesses and saves the preprocessed version. 
+7. Part2 fine-tunes T5 language model with WebNLG data. This builds our triple-verbalizer. It is important to make sure that the trained model is saved since the training time is long.
+8. Part3 generates so-called 'gossip stories'. Data to generate stories is available in tsv format in the same folder. 
+9. Please remember that the model is not perfect. It makes several language mistakes. It is necessary to do proof-reading and editing afterwards. 
+10. Enjoy our experiment! :)
