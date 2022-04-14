@@ -1,1 +1,16 @@
+KRW Group Project: Building Narratives from Knowledge Graphs
+Group number: P5-2
+Group members: Fina Polat, Hein Kolk, Jelle Wassenaar, Siddharth Chaubal
 
+Research goal: We are a newspaper agency and want to develop a system to create articles semi-automatically. The goal is to create a newspaper story using information from existing KGs, and to help readers better understanding the content/setting of the story (e.g. visualise a timeline to understand big events and actors in a political or historical event, summarising a movie or the life of someone, etc.).
+
+We are going to generate a gossip story using T5 language model (LM). In order to do that we are going to:
+
+pre-process WebNLG Dataset - Part 1
+fine-tune T5 language model with WebNLG Dataset. - Part 2
+automatically generate stories (template + automatically generated text) - Part 3
+The WebNLG data (Gardent el al., 2017) was created to promote the development (i) of RDF verbalisers and (ii) of microplanners able to handle a wide range of linguistic constructions.
+
+T5 Language Model : Colin Raffel et al. “Exploring the limits of transfer learning with a unified text-to-text transformer”. In: arXiv preprint arXiv:1910.10683 (2019).
+
+The code in this notebook is adapted from https://github.com/MathewAlexander/T5_nlg
