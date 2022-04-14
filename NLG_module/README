@@ -13,4 +13,4 @@ The WebNLG data (Gardent el al., 2017) was created to promote the development (i
 
 T5 Language Model : Colin Raffel et al. “Exploring the limits of transfer learning with a unified text-to-text transformer”. In: arXiv preprint arXiv:1910.10683 (2019).
 
-The code in this notebook is adapted from https://github.com/MathewAlexander/T5_nlg
+The code in these notebooks is adapted from https://github.com/MathewAlexander/T5_nlg
