@@ -1,0 +1,874 @@
+<html>
+<head>
+  <title>Knowledge Graph Overview</title>
+
+  <link rel="stylesheet" href="css/leaflet.css" />
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/leaflet.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/rdf2html.js"></script>
+
+</head>
+<body>
+	<div class='container'>
+
+		<div id="accordion">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h1 class="panel-title text-primary"><u>Project Wiki</u></h1>
+				</div>
+        <div class="in">
+          <div class="panel-body" data-rdftohtml-plugin='ontology'></div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+			  <div class="panel-heading">
+				  <h2 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseTriples" style="cursor: pointer;">
+					  <u>Triples</u>
+            <span class="small glyphicon glyphicon-chevron-down"></span>
+				  </h2>
+			  </div>
+        <div id="collapseTriples" class="panel-collapse collapse in">
+          <div class="panel-body" data-rdftohtml-plugin='triples'></div>
+        </div>
+      </div>
+		</div>
+  </div>
+
+<!-- You can now set the turtle over here: -->
+<script id="turtle" type="text/turtle">
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://test.org/myonto.owl> a owl:Ontology .
+<http://test.org/myonto.owl#childOf>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://test.org/myonto.owl#Child> ;
+  rdfs:range <http://test.org/myonto.owl#Parent> ;
+  owl:inverseOf <http://test.org/myonto.owl#parentOf> .
+
+<http://test.org/myonto.owl#parentOf>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://test.org/myonto.owl#Parent> ;
+  rdfs:range <http://test.org/myonto.owl#Child> ;
+  owl:inverseOf <http://test.org/myonto.owl#childOf> .
+
+<http://test.org/myonto.owl#nationality>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://test.org/myonto.owl#Person> ;
+  rdfs:range <http://test.org/myonto.owl#Country> .
+
+<http://test.org/myonto.owl#hasoccupation>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://test.org/myonto.owl#Person> ;
+  rdfs:range <http://test.org/myonto.owl#Celebrity> .
+
+<http://test.org/myonto.owl#hasRelative>
+  a owl:ObjectProperty, owl:SymmetricProperty ;
+  rdfs:domain <http://test.org/myonto.owl#Person> ;
+  rdfs:range <http://test.org/myonto.owl#Relative> .
+
+<http://test.org/myonto.owl#partnerOf>
+  a owl:ObjectProperty, owl:SymmetricProperty ;
+  rdfs:domain <http://test.org/myonto.owl#Person> ;
+  rdfs:range <http://test.org/myonto.owl#Partner> .
+
+<http://test.org/myonto.owl#ofNationality>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://test.org/myonto.owl#Person> ;
+  rdfs:range <http://test.org/myonto.owl#Country> .
+
+<http://test.org/myonto.owl#hasOccupation>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://test.org/myonto.owl#Person> ;
+  rdfs:range <http://test.org/myonto.owl#Occupation> .
+
+<http://test.org/myonto.owl#birthDate>
+  a owl:DatatypeProperty, owl:FunctionalProperty ;
+  rdfs:domain <http://test.org/myonto.owl#Person> ;
+  rdfs:range xsd:string .
+
+<http://test.org/myonto.owl#birthPlace>
+  a owl:DatatypeProperty, owl:FunctionalProperty ;
+  rdfs:domain <http://test.org/myonto.owl#Person> ;
+  rdfs:range xsd:string .
+
+<http://test.org/myonto.owl#gender>
+  a owl:DatatypeProperty, owl:FunctionalProperty ;
+  rdfs:domain <http://test.org/myonto.owl#Person> ;
+  rdfs:range xsd:string .
+
+<http://test.org/myonto.owl#ofGender>
+  a owl:DatatypeProperty, owl:FunctionalProperty ;
+  rdfs:domain <http://test.org/myonto.owl#Person> ;
+  rdfs:range xsd:string .
+
+<http://test.org/myonto.owl#lengthPage>
+  a owl:DatatypeProperty, owl:FunctionalProperty ;
+  rdfs:domain <http://test.org/myonto.owl#Person> ;
+  rdfs:range xsd:integer .
+
+<http://test.org/myonto.owl#amountWikiLinks>
+  a owl:DatatypeProperty, owl:FunctionalProperty ;
+  rdfs:domain <http://test.org/myonto.owl#Person> ;
+  rdfs:range xsd:integer .
+
+<http://test.org/myonto.owl#Person>
+  a owl:Class ;
+  rdfs:subClassOf owl:Thing .
+
+<http://test.org/myonto.owl#Celebrity>
+  a owl:Class ;
+  rdfs:subClassOf <http://test.org/myonto.owl#Person> .
+
+<http://test.org/myonto.owl#Actors>
+  a owl:Class ;
+  rdfs:subClassOf <http://test.org/myonto.owl#Celebrity> .
+
+<http://test.org/myonto.owl#Athletes>
+  a owl:Class ;
+  rdfs:subClassOf <http://test.org/myonto.owl#Celebrity> .
+
+<http://test.org/myonto.owl#Royalty>
+  a owl:Class ;
+  rdfs:subClassOf <http://test.org/myonto.owl#Celebrity> .
+
+<http://test.org/myonto.owl#Dancers>
+  a owl:Class ;
+  rdfs:subClassOf <http://test.org/myonto.owl#Celebrity> .
+
+<http://test.org/myonto.owl#Singers>
+  a owl:Class ;
+  rdfs:subClassOf <http://test.org/myonto.owl#Celebrity> .
+
+<http://test.org/myonto.owl#Politicians>
+  a owl:Class ;
+  rdfs:subClassOf <http://test.org/myonto.owl#Celebrity> .
+
+<http://test.org/myonto.owl#Influencers>
+  a owl:Class ;
+  rdfs:subClassOf <http://test.org/myonto.owl#Celebrity> .
+
+<http://test.org/myonto.owl#Models>
+  a owl:Class ;
+  rdfs:subClassOf <http://test.org/myonto.owl#Celebrity> .
+
+<http://test.org/myonto.owl#Scientists>
+  a owl:Class ;
+  rdfs:subClassOf <http://test.org/myonto.owl#Celebrity> .
+
+<http://test.org/myonto.owl#Comedians>
+  a owl:Class ;
+  rdfs:subClassOf <http://test.org/myonto.owl#Celebrity> .
+
+<http://test.org/myonto.owl#Parent>
+  a owl:Class ;
+  rdfs:subClassOf <http://test.org/myonto.owl#Person> .
+
+<http://test.org/myonto.owl#Child>
+  a owl:Class ;
+  rdfs:subClassOf <http://test.org/myonto.owl#Person> .
+
+<http://test.org/myonto.owl#Country>
+  a owl:Class ;
+  rdfs:subClassOf <http://test.org/myonto.owl#Person> .
+
+<http://test.org/myonto.owl#Occupation>
+  a owl:Class ;
+  rdfs:subClassOf <http://test.org/myonto.owl#Person> .
+
+<http://test.org/myonto.owl#Partner>
+  a owl:Class ;
+  rdfs:subClassOf <http://test.org/myonto.owl#Person> .
+
+<http://test.org/myonto.owl#Relative>
+  a owl:Class ;
+  rdfs:subClassOf <http://test.org/myonto.owl#Person> .
+
+
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ns0: <http://test.org/myonto.> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+foaf:Person owl:equivalentClass <http://test.org/myonto.owlPerson> .
+<http://dbpedia.org/property/occupation> owl:equivalentClass <http://test.org/myonto.owlOccupation> .
+<http://dbpedia.org/resource/Taylor_Swift>
+  a <http://test.org/myonto.owlPerson> ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/West_Reading,_Pennsylvania> ;
+  ns0:owlbirthDate "1989-12-13"^^xsd:date ;
+  ns0:owlhasOccupation "Singer-songwriter"@en, "actress"@en, "director"@en, "businesswoman"@en, "record producer"@en, ""@en ;
+  ns0:owlhasPartner <http://dbpedia.org/resource/Joe_Alwyn> ;
+  ns0:owlhasRelative ""@en, "Austin Swift"@en, "Marjorie Finlay"@en ;
+  ns0:owllengthPage "371774"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 746 .
+
+<http://dbpedia.org/resource/West_Reading,_Pennsylvania> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Joe_Alwyn> a ns0:owlPartner .
+<http://dbpedia.org/resource/Alia_Bhatt>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Mumbai> ;
+  ns0:owlbirthDate "1993-03-15"^^xsd:date ;
+  ns0:owlhasOccupation "Actress, singer"@en ;
+  ns0:owlhasPartner "Ranbir Kapoor"@en ;
+  ns0:owlhasRelative "See Bhatt family"@en ;
+  ns0:owllengthPage "86819"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 177 .
+
+<http://dbpedia.org/resource/Mumbai> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Kylie_Jenner>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Los_Angeles> ;
+  ns0:owlbirthDate "1997-08-10"^^xsd:date ;
+  ns0:owlhasOccupation "Media personality"@en, ""@en, "businesswoman"@en, "model"@en, "socialite"@en ;
+  ns0:owlhasPartner "Tyga"@en, ""@en, "Travis Scott"@en ;
+  ns0:owlhasRelative <http://dbpedia.org/resource/Kardashian_family> ;
+  ns0:owllengthPage "94161"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 187 .
+
+<http://dbpedia.org/resource/Los_Angeles> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Kardashian_family> a ns0:owlRelative .
+<http://dbpedia.org/resource/Robert_Pattinson>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/London> ;
+  ns0:owlbirthDate "1986-05-13"^^xsd:date ;
+  ns0:owlhasOccupation "Actor"@en ;
+  ns0:owlhasPartner <http://dbpedia.org/resource/Suki_Waterhouse> ;
+  ns0:owlhasRelative <http://dbpedia.org/resource/Lizzy_Pattinson> ;
+  ns0:owllengthPage "154863"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 283 .
+
+<http://dbpedia.org/resource/London> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Suki_Waterhouse> a ns0:owlPartner .
+<http://dbpedia.org/resource/Lizzy_Pattinson> a ns0:owlRelative .
+<http://dbpedia.org/resource/Bruno_Mars>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Hawaii>, <http://dbpedia.org/resource/Honolulu> ;
+  ns0:owlbirthDate "1985-10-08"^^xsd:date ;
+  ns0:owlhasOccupation "Singer"@en, "musician"@en, "dancer"@en, "record producer"@en, "songwriter"@en, ""@en ;
+  ns0:owlhasPartner <http://dbpedia.org/resource/Jessica_Caban>, ""@en ;
+  ns0:owllengthPage "169542"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 409 .
+
+<http://dbpedia.org/resource/Hawaii> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Jessica_Caban> a ns0:owlPartner .
+<http://dbpedia.org/resource/Honolulu> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Madonna>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Bay_City,_Michigan> ;
+  ns0:owlbirthDate "1958-08-16"^^xsd:date ;
+  ns0:owlhasOccupation "actress"@en, "author"@en, "dancer"@en, "Singer-songwriter"@en, "director"@en, ""@en, "businesswoman"@en, "producer"@en ;
+  ns0:owlhasPartner "Carlos Leon"@en ;
+  ns0:owllengthPage "212634"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 704 .
+
+<http://dbpedia.org/resource/Bay_City,_Michigan> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Bradley_Cooper>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Abington_Township,_Montgomery_County,_Pennsylvania> ;
+  ns0:owlbirthDate "1975-01-05"^^xsd:date ;
+  ns0:owlhasOccupation ""@en, "Actor"@en, "filmmaker"@en ;
+  ns0:owlhasPartner <http://dbpedia.org/resource/Irina_Shayk> ;
+  ns0:owllengthPage "129787"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 329 .
+
+<http://dbpedia.org/resource/Abington_Township,_Montgomery_County,_Pennsylvania> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Irina_Shayk> a ns0:owlPartner .
+<http://dbpedia.org/resource/Britney_Spears>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/McComb,_Mississippi> ;
+  ns0:owlbirthDate "1981-12-02"^^xsd:date ;
+  ns0:owlhasOccupation "songwriter"@en, "Singer"@en, ""@en, "actress"@en, "dancer"@en ;
+  ns0:owlhasPartner "Sam Asghari"@en ;
+  ns0:owllengthPage "252265"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 557 .
+
+<http://dbpedia.org/resource/McComb,_Mississippi> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Keanu_Reeves>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Beirut>, <http://dbpedia.org/resource/Lebanon> ;
+  ns0:owlbirthDate "1964-09-02"^^xsd:date ;
+  ns0:owlhasOccupation "Actor"@en ;
+  ns0:owlhasPartner <http://dbpedia.org/resource/Jennifer_Syme>, "Alexandra Grant"@en ;
+  ns0:owllengthPage "147667"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 458 .
+
+<http://dbpedia.org/resource/Beirut> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Jennifer_Syme> a ns0:owlPartner .
+<http://dbpedia.org/resource/Lebanon> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Ranbir_Kapoor>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Maharashtra>, <http://dbpedia.org/resource/Mumbai> ;
+  ns0:owlbirthDate "1982-09-28"^^xsd:date ;
+  ns0:owlhasOccupation "Actor"@en ;
+  ns0:owlhasPartner "Alia Bhatt"@en ;
+  ns0:owllengthPage "110132"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 207 .
+
+<http://dbpedia.org/resource/Maharashtra> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Sonam_Kapoor>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/India>, <http://dbpedia.org/resource/Mumbai>, <http://dbpedia.org/resource/Maharashtra> ;
+  ns0:owlbirthDate "1985-06-09"^^xsd:date ;
+  ns0:owlhasOccupation <http://dbpedia.org/resource/Actor> ;
+  ns0:owlhasPartner 2018, ""@en, "Anand Ahuja"@en ;
+  ns0:owlhasRelative "See Surinder Kapoor family"@en ;
+  ns0:owllengthPage "133563"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 241 .
+
+<http://dbpedia.org/resource/India> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Actor> a ns0:owlOccupation .
+<http://dbpedia.org/resource/Ariana_Grande>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Boca_Raton,_Florida> ;
+  ns0:owlbirthDate "1993-06-26"^^xsd:date ;
+  ns0:owlhasOccupation ""@en, "actress"@en, "Singer"@en, "songwriter"@en ;
+  ns0:owlhasPartner "2021-05-15"^^xsd:date, ""@en, "Dalton Gomez"@en ;
+  ns0:owlhasRelative <http://dbpedia.org/resource/Frankie_Grande> ;
+  ns0:owllengthPage "213213"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 497 .
+
+<http://dbpedia.org/resource/Boca_Raton,_Florida> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Frankie_Grande> a ns0:owlRelative .
+<http://dbpedia.org/resource/Ayushmann_Khurrana>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Chandigarh> ;
+  ns0:owlbirthDate "1984-09-14"^^xsd:date ;
+  ns0:owlhasOccupation "Actor"@en, ""@en, "singer"@en, "television host"@en ;
+  ns0:owlhasPartner 2008, ""@en, "Tahira Kashyap"@en ;
+  ns0:owlhasRelative <http://dbpedia.org/resource/Aparshakti_Khurana> ;
+  ns0:owllengthPage "46103"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 149 .
+
+<http://dbpedia.org/resource/Chandigarh> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Aparshakti_Khurana> a ns0:owlRelative .
+<http://dbpedia.org/resource/Beyoncé>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Houston>, <http://dbpedia.org/resource/Texas> ;
+  ns0:owlbirthDate "1981-09-04"^^xsd:date ;
+  ns0:owlhasOccupation ""@en, "director"@en, "dancer"@en, "Singer"@en, "producer"@en, "actress"@en, "businesswoman"@en, "songwriter"@en ;
+  ns0:owlhasPartner "2008-04-04"^^xsd:date, <http://dbpedia.org/resource/Jay-Z>, ""@en ;
+  ns0:owlhasRelative <http://dbpedia.org/resource/Solange_Knowles> ;
+  ns0:owllengthPage "352396"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 751 .
+
+<http://dbpedia.org/resource/Houston> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Solange_Knowles> a ns0:owlRelative .
+<http://dbpedia.org/resource/Jay-Z> a ns0:owlPartner .
+<http://dbpedia.org/resource/Texas> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Angelina_Jolie>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Los_Angeles>, <http://dbpedia.org/resource/California> ;
+  ns0:owlbirthDate "1975-06-04"^^xsd:date ;
+  ns0:owlhasOccupation "filmmaker"@en, ""@en, "Actress"@en ;
+  ns0:owlhasPartner 1996, 2000, 2003, 2014, 2019, <http://dbpedia.org/resource/Jonny_Lee_Miller>, <http://dbpedia.org/resource/Billy_Bob_Thornton>, <http://dbpedia.org/resource/Brad_Pitt>, ""@en, "div."@en ;
+  ns0:owlhasRelative <http://dbpedia.org/resource/James_Haven>, <http://dbpedia.org/resource/Chip_Taylor>, <http://dbpedia.org/resource/Barry_Voight>, ""@en ;
+  ns0:owllengthPage "223186"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 441 .
+
+<http://dbpedia.org/resource/James_Haven> a ns0:owlRelative .
+<http://dbpedia.org/resource/Chip_Taylor> a ns0:owlRelative .
+<http://dbpedia.org/resource/Barry_Voight> a ns0:owlRelative .
+<http://dbpedia.org/resource/Jonny_Lee_Miller> a ns0:owlPartner .
+<http://dbpedia.org/resource/Billy_Bob_Thornton> a ns0:owlPartner .
+<http://dbpedia.org/resource/Brad_Pitt>
+  a ns0:owlPartner, ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Shawnee,_Oklahoma> ;
+  ns0:owlbirthDate "1963-12-18"^^xsd:date ;
+  ns0:owlhasOccupation ""@en, "Actor"@en, "film producer"@en ;
+  ns0:owllengthPage "155022"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 386 .
+
+<http://dbpedia.org/resource/California> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Hrithik_Roshan>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Mumbai> ;
+  ns0:owlbirthDate "1974-01-10"^^xsd:date ;
+  ns0:owlhasOccupation "Actor"@en ;
+  ns0:owlhasPartner 2000, 2014, <http://dbpedia.org/resource/Sussanne_Khan>, ""@en, "divorced"@en ;
+  ns0:owlhasRelative "See Roshan family"@en ;
+  ns0:owllengthPage "134086"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 233 .
+
+<http://dbpedia.org/resource/Sussanne_Khan> a ns0:owlPartner .
+<http://dbpedia.org/resource/Priyanka_Chopra>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/India>, <http://dbpedia.org/resource/Jamshedpur>, <http://dbpedia.org/resource/Jharkhand>, <http://dbpedia.org/resource/Bihar> ;
+  ns0:owlbirthDate "1982-07-18"^^xsd:date ;
+  ns0:owlhasOccupation ""@en, "film producer"@en, "Actress"@en, "model"@en, "singer"@en ;
+  ns0:owlhasPartner 2018, <http://dbpedia.org/resource/Nick_Jonas>, ""@en ;
+  ns0:owlhasRelative <http://dbpedia.org/resource/Category:Jonas_family> ;
+  ns0:owllengthPage "232324"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 540 .
+
+<http://dbpedia.org/resource/Category:Jonas_family> a ns0:owlRelative .
+<http://dbpedia.org/resource/Nick_Jonas> a ns0:owlPartner .
+<http://dbpedia.org/resource/Jamshedpur> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Jharkhand> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Bihar> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Scarlett_Johansson>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/New_York_City> ;
+  ns0:owlbirthDate "1984-11-22"^^xsd:date ;
+  ns0:owlhasOccupation ""@en, "Actress"@en, "singer"@en ;
+  ns0:owlhasPartner 2008, 2011, 2014, 2017, 2020, <http://dbpedia.org/resource/Colin_Jost>, <http://dbpedia.org/resource/Ryan_Reynolds>, ""@en, "Romain Dauriac"@en ;
+  ns0:owlhasRelative <http://dbpedia.org/resource/Ejner_Johansson> ;
+  ns0:owllengthPage "189481"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 416 .
+
+<http://dbpedia.org/resource/New_York_City> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Ejner_Johansson> a ns0:owlRelative .
+<http://dbpedia.org/resource/Colin_Jost> a ns0:owlPartner .
+<http://dbpedia.org/resource/Ryan_Reynolds> a ns0:owlPartner .
+<http://dbpedia.org/resource/Miley_Cyrus>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Franklin,_Tennessee> ;
+  ns0:owlbirthDate "1992-11-23"^^xsd:date ;
+  ns0:owlhasOccupation ""@en, "Singer"@en, "songwriter"@en, "actress"@en, "record producer"@en ;
+  ns0:owlhasPartner "2018-12-23"^^xsd:date, "2020-01-28"^^xsd:date, <http://dbpedia.org/resource/Liam_Hemsworth>, ""@en ;
+  ns0:owlhasRelative ""@en, "Brandi Cyrus"@en, "Noah Cyrus"@en, "Ron Cyrus"@en, "Trace Cyrus"@en ;
+  ns0:owllengthPage "193708"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 487 .
+
+<http://dbpedia.org/resource/Franklin,_Tennessee> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Liam_Hemsworth> a ns0:owlPartner .
+<http://dbpedia.org/resource/Jennifer_Lawrence>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Indian_Hills,_Kentucky> ;
+  ns0:owlbirthDate "1990-08-15"^^xsd:date ;
+  ns0:owlhasOccupation "Actress"@en ;
+  ns0:owlhasPartner 2019, ""@en, "Cooke Maroney"@en ;
+  ns0:owllengthPage "134751"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 255 .
+
+<http://dbpedia.org/resource/Indian_Hills,_Kentucky> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Cate_Blanchett>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Victoria_(Australia)>, <http://dbpedia.org/resource/Melbourne> ;
+  ns0:owlbirthDate "1969-05-14"^^xsd:date ;
+  ns0:owlhasOccupation "producer"@en, ""@en, "Actress"@en ;
+  ns0:owlhasPartner 1997, <http://dbpedia.org/resource/Andrew_Upton>, ""@en ;
+  ns0:owllengthPage "191824"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 481 .
+
+<http://dbpedia.org/resource/Victoria_(Australia)> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Andrew_Upton> a ns0:owlPartner .
+<http://dbpedia.org/resource/Melbourne> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Dwayne_Johnson>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Hayward,_California> ;
+  ns0:owlbirthDate "1972-05-02"^^xsd:date ;
+  ns0:owlhasOccupation ""@en, "Actor"@en, "professional wrestler"@en, "businessman"@en, "producer"@en ;
+  ns0:owlhasPartner 1997, 2008, 2019, <http://dbpedia.org/resource/Dany_Garcia>, ""@en, "Lauren Hashian"@en ;
+  ns0:owllengthPage "200481"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 533 .
+
+<http://dbpedia.org/resource/Hayward,_California> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Dany_Garcia> a ns0:owlPartner .
+<http://dbpedia.org/resource/Keira_Knightley>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/London> ;
+  ns0:owlbirthDate "1985-03-26"^^xsd:date ;
+  ns0:owlhasOccupation "Actress"@en ;
+  ns0:owlhasPartner "2013-05-04"^^xsd:date, <http://dbpedia.org/resource/James_Righton>, ""@en ;
+  ns0:owllengthPage "143578"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 366 .
+
+<http://dbpedia.org/resource/James_Righton> a ns0:owlPartner .
+<http://dbpedia.org/resource/Phil_McGraw>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Vinita,_Oklahoma> ;
+  ns0:owlbirthDate "1950-09-01"^^xsd:date ;
+  ns0:owlhasOccupation ""@en, "Television host"@en, "author"@en ;
+  ns0:owlhasPartner 1970, 1973, 1976, ""@en, "Debbie Higgins McCall"@en, "Robin Jameson"@en ;
+  ns0:owllengthPage "61840"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 116 .
+
+<http://dbpedia.org/resource/Vinita,_Oklahoma> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Paul_Rudd>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Passaic,_New_Jersey> ;
+  ns0:owlbirthDate "1969-04-06"^^xsd:date ;
+  ns0:owlhasOccupation "screenwriter"@en, ""@en, "Actor"@en, "comedian"@en, "producer"@en ;
+  ns0:owlhasPartner 2003, ""@en, "Julie Yaeger"@en ;
+  ns0:owllengthPage "50362"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 206 .
+
+<http://dbpedia.org/resource/Passaic,_New_Jersey> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Rana_Daggubati>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Tamil_Nadu>, <http://dbpedia.org/resource/Chennai> ;
+  ns0:owlbirthDate "1984-12-14"^^xsd:date ;
+  ns0:owlhasOccupation ""@en, "entrepreneur"@en, "Actor"@en, "film producer"@en ;
+  ns0:owlhasPartner 2020, ""@en, "Miheeka Bajaj"@en ;
+  ns0:owllengthPage "74015"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 194 .
+
+<http://dbpedia.org/resource/Tamil_Nadu> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Chennai> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Reese_Witherspoon>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Louisiana>, <http://dbpedia.org/resource/New_Orleans> ;
+  ns0:owlbirthDate "1976-03-22"^^xsd:date ;
+  ns0:owlhasOccupation "Actress"@en, "entrepreneur"@en, "producer"@en, ""@en ;
+  ns0:owlhasPartner "1999-06-05"^^xsd:date, "2007-10-05"^^xsd:date, "2011-03-26"^^xsd:date, <http://dbpedia.org/resource/Ryan_Phillippe>, ""@en, "Jim Toth"@en ;
+  ns0:owllengthPage "160374"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 365 .
+
+<http://dbpedia.org/resource/Louisiana> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Ryan_Phillippe> a ns0:owlPartner .
+<http://dbpedia.org/resource/New_Orleans> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Tina_Fey>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Pennsylvania>, <http://dbpedia.org/resource/Upper_Darby_Township,_Delaware_County,_Pennsylvania> ;
+  ns0:owlbirthDate "1970-05-18"^^xsd:date ;
+  ns0:owlhasOccupation "comedian"@en, "writer"@en, "Actress"@en, "playwright"@en, ""@en, "producer"@en ;
+  ns0:owlhasPartner "2001-06-03"^^xsd:date, <http://dbpedia.org/resource/Jeff_Richmond>, ""@en ;
+  ns0:owllengthPage "117692"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 318 .
+
+<http://dbpedia.org/resource/Pennsylvania> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Jeff_Richmond> a ns0:owlPartner .
+<http://dbpedia.org/resource/Upper_Darby_Township,_Delaware_County,_Pennsylvania> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Jennifer_Aniston>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Los_Angeles>, <http://dbpedia.org/resource/California> ;
+  ns0:owlbirthDate "1969-02-11"^^xsd:date ;
+  ns0:owlhasOccupation ""@en, "businesswoman"@en, "producer"@en, "Actress"@en ;
+  ns0:owlhasPartner 2000, 2005, 2015, 2017, <http://dbpedia.org/resource/Brad_Pitt>, <http://dbpedia.org/resource/Justin_Theroux>, ""@en ;
+  ns0:owllengthPage "98359"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 278 .
+
+<http://dbpedia.org/resource/Justin_Theroux> a ns0:owlPartner .
+<http://dbpedia.org/resource/Madhuri_Dixit>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Mumbai>, <http://dbpedia.org/resource/Maharashtra>, <http://dbpedia.org/resource/India> ;
+  ns0:owlbirthDate "1967-05-15"^^xsd:date ;
+  ns0:owlhasOccupation "dancer"@en, "television personality"@en, "Actress"@en, "producer"@en, ""@en ;
+  ns0:owlhasPartner "1999-10-17"^^xsd:date, ""@en, "Shriram Madhav Nene"@en ;
+  ns0:owllengthPage "129216"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 341 .
+
+<http://dbpedia.org/resource/Natalie_Portman>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Jerusalem> ;
+  ns0:owlbirthDate "1981-06-09"^^xsd:date ;
+  ns0:owlhasOccupation ""@en, "producer"@en, "Actress"@en, "director"@en ;
+  ns0:owlhasPartner "2012-08-04"^^xsd:date, <http://dbpedia.org/resource/Benjamin_Millepied>, ""@en ;
+  ns0:owllengthPage "146062"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 389 .
+
+<http://dbpedia.org/resource/Jerusalem> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Benjamin_Millepied> a ns0:owlPartner .
+<http://dbpedia.org/resource/Tom_Hanks>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Concord,_California> ;
+  ns0:owlbirthDate "1956-07-09"^^xsd:date ;
+  ns0:owlhasOccupation "Actor"@en, ""@en, "filmmaker"@en ;
+  ns0:owlhasPartner 1978, 1987, 1988, <http://dbpedia.org/resource/Rita_Wilson>, ""@en, "divorced"@en, "Samantha Lewes"@en ;
+  ns0:owllengthPage "101051"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 407 .
+
+<http://dbpedia.org/resource/Concord,_California> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Rita_Wilson> a ns0:owlPartner .
+<http://dbpedia.org/resource/Harry_Knowles>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Austin,_Texas> ;
+  ns0:owlbirthDate "1971-12-11"^^xsd:date ;
+  ns0:owlhasOccupation "Film critic, writer"@en ;
+  ns0:owlhasPartner 2007, ""@en, "Patricia Cho Jones"@en ;
+  ns0:owllengthPage "19979"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 70 .
+
+<http://dbpedia.org/resource/Austin,_Texas> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Anushka_Sharma>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Uttar_Pradesh>, <http://dbpedia.org/resource/Ayodhya> ;
+  ns0:owlbirthDate "1988-05-01"^^xsd:date ;
+  ns0:owlhasOccupation "Film producer"@en, ""@en, "Actor"@en ;
+  ns0:owlhasPartner 2017, <http://dbpedia.org/resource/Virat_Kohli>, ""@en ;
+  ns0:owllengthPage "106542"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 182 .
+
+<http://dbpedia.org/resource/Uttar_Pradesh> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Virat_Kohli> a ns0:owlPartner .
+<http://dbpedia.org/resource/Ayodhya> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Justin_Bieber>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/London,_Ontario> ;
+  ns0:owlbirthDate "1994-03-01"^^xsd:date ;
+  ns0:owlhasOccupation "songwriter"@en, "Singer"@en, ""@en ;
+  ns0:owlhasPartner "2018-09-13"^^xsd:date, <http://dbpedia.org/resource/Hailey_Bieber>, ""@en ;
+  ns0:owllengthPage "220034"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 558 .
+
+<http://dbpedia.org/resource/London,_Ontario> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Hailey_Bieber> a ns0:owlPartner .
+<http://dbpedia.org/resource/Adriana_Lima>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Salvador,_Bahia> ;
+  ns0:owlbirthDate "1981-06-12"^^xsd:date ;
+  ns0:owlhasOccupation "actress"@en, "Model"@en, ""@en ;
+  ns0:owlhasPartner 2009, 2016, <http://dbpedia.org/resource/Marko_Jarić>, ""@en, "divorced"@en ;
+  ns0:owllengthPage "64353"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 211 .
+
+<http://dbpedia.org/resource/Salvador,_Bahia> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Marko_Jarić> a ns0:owlPartner .
+<http://dbpedia.org/resource/Allu_Arjun>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Tamil_Nadu>, <http://dbpedia.org/resource/Chennai> ;
+  ns0:owlbirthDate "1983-04-08"^^xsd:date ;
+  ns0:owlhasOccupation "dancer"@en, ""@en, """Film
+actor"""@en ;
+  ns0:owlhasPartner 2011, ""@en, "Allu Sneha Reddy"@en ;
+  ns0:owllengthPage "75165"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 207 .
+
+<http://dbpedia.org/resource/Amy_Adams>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Vicenza> ;
+  ns0:owlbirthDate "1974-08-20"^^xsd:date ;
+  ns0:owlhasOccupation "Actress"@en ;
+  ns0:owlhasPartner 2015, ""@en, "Darren Le Gallo"@en ;
+  ns0:owllengthPage "138792"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 321 .
+
+<http://dbpedia.org/resource/Vicenza> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Deepika_Padukone>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Copenhagen> ;
+  ns0:owlbirthDate "1986-01-05"^^xsd:date ;
+  ns0:owlhasOccupation "Actress"@en ;
+  ns0:owlhasPartner 2018, <http://dbpedia.org/resource/Ranveer_Singh>, ""@en ;
+  ns0:owllengthPage "148090"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 276 .
+
+<http://dbpedia.org/resource/Copenhagen> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Ranveer_Singh> a ns0:owlPartner .
+<http://dbpedia.org/resource/Emma_Stone>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Scottsdale,_Arizona> ;
+  ns0:owlbirthDate "1988-11-06"^^xsd:date ;
+  ns0:owlhasOccupation "Actress"@en ;
+  ns0:owlhasPartner 2020, <http://dbpedia.org/resource/Dave_McCary>, ""@en ;
+  ns0:owllengthPage "127939"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 296 .
+
+<http://dbpedia.org/resource/Scottsdale,_Arizona> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Dave_McCary> a ns0:owlPartner .
+<http://dbpedia.org/resource/Jennifer_Love_Hewitt>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Waco,_Texas> ;
+  ns0:owlbirthDate "1979-02-21"^^xsd:date ;
+  ns0:owlhasOccupation "producer"@en, ""@en, "Actress"@en, "singer"@en ;
+  ns0:owlhasPartner 2013, <http://dbpedia.org/resource/Brian_Hallisay>, ""@en ;
+  ns0:owllengthPage "72728"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 270 .
+
+<http://dbpedia.org/resource/Waco,_Texas> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Brian_Hallisay> a ns0:owlPartner .
+<http://dbpedia.org/resource/Ram_Charan>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Tamil_Nadu>, <http://dbpedia.org/resource/India>, <http://dbpedia.org/resource/Chennai> ;
+  ns0:owlbirthDate "1985-03-27"^^xsd:date ;
+  ns0:owlhasOccupation "Actor"@en, ""@en, "film producer"@en, "entrepreneur"@en ;
+  ns0:owlhasPartner "2012-06-14"^^xsd:date, ""@en, "Upasana Kamineni"@en ;
+  ns0:owllengthPage "79968"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 180 .
+
+<http://dbpedia.org/resource/Parineeti_Chopra>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Haryana>, <http://dbpedia.org/resource/India>, <http://dbpedia.org/resource/Ambala> ;
+  ns0:owlbirthDate "1988-10-22"^^xsd:date ;
+  ns0:owlhasOccupation <http://dbpedia.org/resource/Singing>, ""@en, <http://dbpedia.org/resource/Actor> ;
+  ns0:owlhasRelative "See Chopra family"@en ;
+  ns0:owllengthPage "63154"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 176 .
+
+<http://dbpedia.org/resource/Haryana> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Singing> a ns0:owlOccupation .
+<http://dbpedia.org/resource/Ambala> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Pawan_Kalyan>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Bapatla>, <http://dbpedia.org/resource/Andhra_Pradesh> ;
+  ns0:owlbirthDate "1968-09-02"^^xsd:date ;
+  ns0:owlhasOccupation "director"@en, ""@en, "Actor"@en, "Film Producer politician"@en, "writer"@en ;
+  ns0:owlhasRelative "See Allu–Konidela family"@en ;
+  ns0:owllengthPage "66346"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 163 .
+
+<http://dbpedia.org/resource/Bapatla> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Andhra_Pradesh> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Prabhas>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Chennai>, <http://dbpedia.org/resource/Tamil_Nadu> ;
+  ns0:owlbirthDate "1979-10-23"^^xsd:date ;
+  ns0:owlhasOccupation "Actor"@en ;
+  ns0:owlhasRelative <http://dbpedia.org/resource/Krishnam_Raju> ;
+  ns0:owllengthPage "40606"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 112 .
+
+<http://dbpedia.org/resource/Krishnam_Raju> a ns0:owlRelative .
+<http://dbpedia.org/resource/Vicky_Kaushal>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Mumbai> ;
+  ns0:owlbirthDate "1988-05-16"^^xsd:date ;
+  ns0:owlhasOccupation "Actor"@en ;
+  ns0:owlhasRelative <http://dbpedia.org/resource/Sunny_Kaushal> ;
+  ns0:owllengthPage "64008"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 143 .
+
+<http://dbpedia.org/resource/Sunny_Kaushal> a ns0:owlRelative .
+<http://dbpedia.org/resource/Shraddha_Kapoor>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Mumbai>, <http://dbpedia.org/resource/Maharashtra> ;
+  ns0:owlbirthDate "1987-03-03"^^xsd:date ;
+  ns0:owlhasOccupation ""@en, "singer"@en, "Actress"@en ;
+  ns0:owlhasRelative "See Mangeshkar-Hardikar-Abhisheki family"@en ;
+  ns0:owllengthPage "101917"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 195 .
+
+<http://dbpedia.org/resource/Billie_Eilish>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Los_Angeles> ;
+  ns0:owlbirthDate "2001-12-18"^^xsd:date ;
+  ns0:owlhasOccupation "songwriter"@en, ""@en, "Singer"@en ;
+  ns0:owlhasRelative <http://dbpedia.org/resource/Finneas_O'Connell> ;
+  ns0:owllengthPage "152295"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 282 .
+
+<http://dbpedia.org/resource/Finneas_O'Connell> a ns0:owlRelative .
+<http://dbpedia.org/resource/Lady_Gaga>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/New_York_City> ;
+  ns0:owlbirthDate "1986-03-28"^^xsd:date ;
+  ns0:owlhasOccupation "record producer"@en, "Singer"@en, ""@en, "actress"@en, "songwriter"@en ;
+  ns0:owlhasRelative <http://dbpedia.org/resource/Natali_Germanotta> ;
+  ns0:owllengthPage "297239"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 609 .
+
+<http://dbpedia.org/resource/Natali_Germanotta> a ns0:owlRelative .
+<http://dbpedia.org/resource/Shawnee,_Oklahoma> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Zac_Efron>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/San_Luis_Obispo,_California> ;
+  ns0:owlbirthDate "1987-10-18"^^xsd:date ;
+  ns0:owlhasOccupation "singer"@en, ""@en, "Actor"@en ;
+  ns0:owllengthPage "91095"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 266 .
+
+<http://dbpedia.org/resource/San_Luis_Obispo,_California> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Kartik_Aaryan>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/India>, <http://dbpedia.org/resource/Madhya_Pradesh>, <http://dbpedia.org/resource/Gwalior> ;
+  ns0:owlbirthDate "1990-11-22"^^xsd:date ;
+  ns0:owlhasOccupation "Actor"@en ;
+  ns0:owllengthPage "68365"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 115 .
+
+<http://dbpedia.org/resource/Kriti_Sanon>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/New_Delhi>, <http://dbpedia.org/resource/India> ;
+  ns0:owlbirthDate "1990-07-27"^^xsd:date ;
+  ns0:owlhasOccupation "Actress"@en ;
+  ns0:owllengthPage "52741"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 129 .
+
+<http://dbpedia.org/resource/New_Delhi> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Vidya_Balan>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Mumbai> ;
+  ns0:owlbirthDate "1979-01-01"^^xsd:date ;
+  ns0:owlhasOccupation "Actress"@en ;
+  ns0:owllengthPage "122691"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 231 .
+
+<http://dbpedia.org/resource/Akon>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/St._Louis> ;
+  ns0:owlbirthDate "1973-04-16"^^xsd:date ;
+  ns0:owlhasOccupation ""@en, "record producer"@en, "Singer"@en, "songwriter"@en, "philanthropist]]"@en, "entrepreneur"@en, "[[#Philanthropy"@en ;
+  ns0:owllengthPage "65988"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 321 .
+
+<http://dbpedia.org/resource/St._Louis> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Sara_Ali_Khan>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Mumbai> ;
+  ns0:owlbirthDate "1995-08-12"^^xsd:date ;
+  ns0:owlhasOccupation "Actress"@en ;
+  ns0:owllengthPage "38929"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 84 .
+
+<http://dbpedia.org/resource/Madhya_Pradesh> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Mohit_Chauhan>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Himachal_Pradesh>, <http://dbpedia.org/resource/Nahan> ;
+  ns0:owlbirthDate "1966-03-11"^^xsd:date ;
+  ns0:owlhasOccupation <http://dbpedia.org/resource/Composer>, <http://dbpedia.org/resource/Lyricist>, <http://dbpedia.org/resource/Philanthropy>, <http://dbpedia.org/resource/Singing> ;
+  ns0:owllengthPage "17795"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 94 .
+
+<http://dbpedia.org/resource/Himachal_Pradesh> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Composer> a ns0:owlOccupation .
+<http://dbpedia.org/resource/Taapsee_Pannu>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/New_Delhi> ;
+  ns0:owlbirthDate "1987-08-01"^^xsd:date ;
+  ns0:owlhasOccupation "Actress, Producer"@en ;
+  ns0:owllengthPage "74916"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 190 .
+
+<http://dbpedia.org/resource/Tiger_Shroff>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Maharashtra>, <http://dbpedia.org/resource/Mumbai>, <http://dbpedia.org/resource/India> ;
+  ns0:owlbirthDate "1990-03-02"^^xsd:date ;
+  ns0:owlhasOccupation <http://dbpedia.org/resource/Singing>, ""@en, <http://dbpedia.org/resource/Dance>, <http://dbpedia.org/resource/Martial_arts>, "Actor"@en ;
+  ns0:owllengthPage "34941"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 97 .
+
+<http://dbpedia.org/resource/Dance> a ns0:owlOccupation .
+<http://dbpedia.org/resource/Martial_arts> a ns0:owlOccupation .
+<http://dbpedia.org/resource/Gwalior> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Rihanna>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Saint_Michael,_Barbados> ;
+  ns0:owlbirthDate "1988-02-20"^^xsd:date ;
+  ns0:owlhasOccupation ""@en, "Singer"@en, "songwriter"@en, "actress"@en, "businesswoman"@en ;
+  ns0:owllengthPage "222327"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 538 .
+
+<http://dbpedia.org/resource/Saint_Michael,_Barbados> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Nahan> a ns0:owlbirthPlace .
+<http://dbpedia.org/resource/Lyricist> a ns0:owlOccupation .
+<http://dbpedia.org/resource/Philanthropy> a ns0:owlOccupation .
+<http://dbpedia.org/resource/Kangana_Ranaut>
+  a ns0:owlPerson ;
+  ns0:owlbirthPlace <http://dbpedia.org/resource/Mandi_district> ;
+  ns0:owlbirthDate "1987-03-23"^^xsd:date ;
+  ns0:owlhasOccupation "Actress"@en, "filmmaker"@en, ""@en ;
+  ns0:owllengthPage "135007"^^xsd:nonNegativeInteger ;
+  ns0:owlamountWikiLinks 227 .
+
+<http://dbpedia.org/resource/Mandi_district> a ns0:owlbirthPlace .
+</script>
+
+<!-- Run RDF2HTML -->
+<script type="text/javascript">
+    var triples = document.getElementById("turtle").innerHTML;
+    var config = {
+        // Plugins to be called, add your own plugin to the plugin definition in rdf2hml.js and compile
+        plugins: ['triples', 'map', 'ontology', 'paging'],
+        // Output information to the console, errors are always logged to the console
+        verbose: true
+    };
+    rdf2html(triples, config);
+</script>
+
+</body>
+</html>
